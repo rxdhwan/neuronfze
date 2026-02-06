@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers | Neuron International FZE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] },
+                    colors: {
+                        navy: { DEFAULT: '#002060', dark: '#0a1226' },
+                        gold: '#C5A017',
+                        offwhite: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-navy-dark bg-offwhite">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy text-white rounded flex items-center justify-center"><i class="fa-solid fa-atom text-xl"></i></div>
+                <div>
+                <h1 class="text-2xl font-extrabold text-navy tracking-tight">NEURON</h1>
+                <p class="text-[10px] tracking-widest uppercase text-gray-500">International FZE</p>
+                </div>
+            </a>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="hover:text-navy transition">Home</a>
+                <a href="about.html" class="hover:text-navy transition">About Us</a>
+                <a href="products.html" class="hover:text-navy transition">Products</a>
+                <a href="suppliers.html" class="text-navy">Suppliers</a>
+                <a href="careers.html" class="hover:text-navy transition">Careers</a>
+            </div>
+            <a href="contact.html" class="px-6 py-2 bg-navy text-white font-bold rounded hover:bg-blue-900 transition">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="relative py-32 flex items-center justify-center bg-cover bg-center overflow-hidden" 
+             style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-color: #002060;">
+        
+        <div class="absolute inset-0 bg-navy/85 z-0"></div>
+        
+        <div class="relative z-10 text-center text-white px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-down">Our Strategic Partners</h1>
+            <p class="text-blue-100 text-lg max-w-2xl mx-auto">Authorized distributors for the world's leading vacuum and flow technology brands.</p>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=ALICAT+SCIENTIFIC" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Alicat Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Alicat Scientific</h3>
+                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-full mb-4 mt-2">USA</span>
+                <p class="text-gray-600 text-sm">Fastest mass flow controllers on the market, ensuring rapid response in CVD processes.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="50">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=BRAZETEC" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Brazetec Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Brazetec GmbH</h3>
+                <span class="inline-block px-3 py-1 bg-yellow-50 text-yellow-800 text-xs font-bold rounded-full mb-4 mt-2">Germany</span>
+                <p class="text-gray-600 text-sm">A leading manufacturer of brazing materials as well as highly pure speciality materials containing precious metals.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=BRONKHORST" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Bronkhorst Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Bronkhorst</h3>
+                <span class="inline-block px-3 py-1 bg-orange-50 text-orange-800 text-xs font-bold rounded-full mb-4 mt-2">Netherlands</span>
+                <p class="text-gray-600 text-sm">The European leader in thermal Mass Flow Meters/Controllers and Electronic Pressure Controllers.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="150">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=HORIBA" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Horiba Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Horiba Ltd.</h3>
+                <span class="inline-block px-3 py-1 bg-red-50 text-red-800 text-xs font-bold rounded-full mb-4 mt-2">Japan</span>
+                <p class="text-gray-600 text-sm">Extensive array of instruments for applications ranging from automotive R&D to semiconductor manufacturing.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=LEYBOLD" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Leybold Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Leybold GmbH</h3>
+                <span class="inline-block px-3 py-1 bg-yellow-50 text-yellow-800 text-xs font-bold rounded-full mb-4 mt-2">Germany</span>
+                <p class="text-gray-600 text-sm">Reliable sealed vacuum pumps for sustainable operation in demanding applications.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=MKS+Inc" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="MKS Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">MKS Inc.</h3>
+                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-full mb-4 mt-2">USA</span>
+                <p class="text-gray-600 text-sm">Compact industrial microwave generators and systems in 915MHz and 2450MHz.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=MUEGGE" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Muegge Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Muegge GmbH</h3>
+                <span class="inline-block px-3 py-1 bg-yellow-50 text-yellow-800 text-xs font-bold rounded-full mb-4 mt-2">Germany</span>
+                <p class="text-gray-600 text-sm">Ranging from industrial microwave heating all the way to plasma technology.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="450">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=NATIONAL+MAGNETICS" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="National Magnetics Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">National Magnetics Group</h3>
+                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-full mb-4 mt-2">USA</span>
+                <p class="text-gray-600 text-sm">A broad range of material compositions, controlled to exacting standards, addressing all applications.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="500">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=Panasonic" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Panasonic Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Panasonic</h3>
+                <span class="inline-block px-3 py-1 bg-red-50 text-red-800 text-xs font-bold rounded-full mb-4 mt-2">Japan</span>
+                <p class="text-gray-600 text-sm">Leading provider of industrial electronic components and factory automation solutions.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="600">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=PFEIFFER+VACUUM" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Pfeiffer Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Pfeiffer Vacuum</h3>
+                <span class="inline-block px-3 py-1 bg-yellow-50 text-yellow-800 text-xs font-bold rounded-full mb-4 mt-2">Germany</span>
+                <p class="text-gray-600 text-sm">World-renowned vacuum solutions, leak detectors, and high-performance turbopumps.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="700">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=SAIREM" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Sairem Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">SAIREM</h3>
+                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-800 text-xs font-bold rounded-full mb-4 mt-2">France</span>
+                <p class="text-gray-600 text-sm">Reliable standalone and integrated microwave generators appreciated by OEMs and research laboratories worldwide.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="800">
+                <div class="h-32 w-full flex items-center justify-center mb-6 p-4 bg-gray-50 rounded-lg group-hover:bg-white transition">
+                    <img src="https://placehold.co/400x150/ffffff/002060?text=TOSHIBA" class="max-h-full max-w-full object-contain mix-blend-multiply" alt="Toshiba Logo">
+                </div>
+                <h3 class="text-xl font-bold text-navy">Toshiba</h3>
+                <span class="inline-block px-3 py-1 bg-red-50 text-red-800 text-xs font-bold rounded-full mb-4 mt-2">Japan</span>
+                <p class="text-gray-600 text-sm">High-voltage microwave components and power systems for industrial applications.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-navy text-white py-12 text-center">
+        <p class="text-gray-400">© 2026 Neuron International FZE. <a href="index.html" class="text-white underline">Back to Home</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+</html>

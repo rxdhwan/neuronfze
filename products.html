@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Neuron International FZE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] },
+                    colors: {
+                        navy: { DEFAULT: '#002060', dark: '#0a1226' },
+                        gold: '#C5A017',
+                        offwhite: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar when modal is open */
+        body.modal-open { overflow: hidden; }
+        .fade-in { animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="font-sans text-navy-dark bg-offwhite">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy text-white rounded flex items-center justify-center"><i class="fa-solid fa-atom text-xl"></i></div>
+                <div>
+                <h1 class="text-2xl font-extrabold text-navy tracking-tight">NEURON</h1>
+                <p class="text-[10px] tracking-widest uppercase text-gray-500">International FZE</p>
+                </div>
+            </a>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="hover:text-navy transition">Home</a>
+                <a href="about.html" class="hover:text-navy transition">About Us</a>
+                <a href="products.html" class="text-navy">Products</a>
+                <a href="suppliers.html" class="hover:text-navy transition">Suppliers</a>
+                <a href="careers.html" class="hover:text-navy transition">Careers</a>
+            </div>
+            <a href="contact.html" class="px-6 py-2 bg-navy text-white font-bold rounded hover:bg-blue-900 transition">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="bg-navy py-20 text-center text-white">
+        <h1 class="text-4xl font-bold mb-4" data-aos="fade-down">Premium CVD Components</h1>
+        <p class="text-blue-200 max-w-2xl mx-auto">Trusted industry standard equipment sourced from Germany, Japan, USA, and China.</p>
+    </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="mass.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Mass Flow Controller">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">Mass Flow Controllers</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">Alicat's diamond mass flow controllers provide precise gas balancing for stable growth rates.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-mfc')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="autop.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Pressure Controller">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">Pressure Controllers</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">Fast-acting proportional control valves to maintain stable pressure in the chamber.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-pressure')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="vaccum.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Vacuum Pump">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">Rotary Vane Vacuum Pump</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">TRP-6 Dual-Stage high-speed pumps. Excellent performance for CVD applications.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-pump')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="quartz.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Quartz Tube">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">CVD Grade Quartz Tubes</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">High-purity quartz capable of withstanding extreme thermal and plasma conditions.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-quartz')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="400">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="Moly.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Molybdenum Parts">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">Molybdenum Disc & Ring</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">Engineered components with excellent thermal conductivity for substrate holders.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-moly')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col group hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="500">
+                <div class="h-56 bg-gray-50 overflow-hidden relative border-b border-gray-100">
+                    <img src="neff.png" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500" alt="Screw Jack">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-navy mb-2">Neff Worm Gear Screw Jack</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow line-clamp-3">Robust mechanical lifting solutions for exact positioning and heavy load handling.</p>
+                    <div class="flex gap-2 mt-4">
+                        <button onclick="openModal('modal-neff')" class="flex-1 py-2 border border-navy text-navy font-bold text-sm rounded hover:bg-navy/5 transition">View Details</button>
+                        <a href="contact.html" class="flex-1 py-2 bg-navy text-white font-bold text-sm rounded text-center hover:bg-blue-900 transition">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="modal-mfc" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-mfc')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">Alicat Mass Flow Controllers</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>Designed for Diamonds. Alicat's diamond mass flow controllers provide precise gas balancing for stable growth rates. They automatically adjust for temperature and pressure changes during ionization.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Technical Specifications</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li><strong>Multi-gas support:</strong> Hydrogen, CO2, Methane, Argon, Oxygen</li>
+                        <li><strong>Control Range:</strong> 0.01-100% of full scale</li>
+                        <li><strong>Response Time:</strong> 30 ms</li>
+                        <li><strong>Accuracy:</strong> As good as ±0.5% of reading</li>
+                        <li><strong>Repeatability:</strong> ±(0.1% of reading + 0.02% of full scale)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-mfc')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pressure" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-pressure')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">Alicat Pressure Controllers</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>Alicat's diamond pressure controllers provide stable control of system pressure during CVD processes. Devices are equipped with a fast-acting proportional control valve which rapidly responds to maintain stable pressure.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Technical Specifications</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li><strong>Control Range:</strong> 0.5-100% of full scale</li>
+                        <li><strong>Response Time:</strong> 30 ms</li>
+                        <li><strong>Leak Integrity:</strong> 10e-9 atm-cc/sec (Exceptional leak integrity)</li>
+                        <li><strong>Repeatability:</strong> ±0.08% of full scale</li>
+                        <li><strong>Accuracy:</strong> As good as ±0.125% of full scale</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-pressure')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-pump" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-pump')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">Dual-Stage Rotary Vane Vacuum Pump (TRP-6)</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>Manufactured by Beijing Beiyi (BWAC). The TRP series of high-speed dual-stage rotary vane vacuum pumps aim to satisfy demanding clients with innovative design.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Key Features</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>High vacuum degree, fast pumping speed</li>
+                        <li>Built-in check valve prevents pump oil suck-back into vacuum system</li>
+                        <li>International standard ISO flanges for inlet and outlet</li>
+                        <li>Constant pressure oil-circulation system</li>
+                        <li>Low noise and little vibration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-pump')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-quartz" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-quartz')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">High-Purity CVD Grade Quartz</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>High-purity quartz tubes capable of withstanding extreme thermal and plasma conditions inside CVD reactors. They offer transparency, excellent thermal shock resistance, and chemical inertness.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Applications in CVD Diamond Growth</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Used as the primary chamber liner for microwave CVD reactors</li>
+                        <li>Improves diamond purity by minimizing contamination</li>
+                        <li>Provides excellent transparency for optical monitoring of plasma</li>
+                        <li>Offers high resistance to thermal shock during rapid heating/cooling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-quartz')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-moly" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-moly')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">Molybdenum Disc & Ring</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>Engineered molybdenum components designed for high-temperature CVD applications. They exhibit excellent thermal conductivity, low expansion, and strong resistance to plasma erosion.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Applications</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Substrate holders for consistent thermal distribution</li>
+                        <li>Support components for diamond growth plates</li>
+                        <li>Reduces thermal deformation and contamination during long reaction cycles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-moly')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-neff" class="fixed inset-0 z-[60] hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 fade-in">
+        <div class="bg-white rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative p-8 shadow-2xl">
+            <button onclick="closeModal('modal-neff')" class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="text-2xl font-bold text-navy mb-4 border-b pb-2">Neff Screw Jacks</h2>
+            <div class="space-y-4 text-gray-700">
+                <p>The NEFF Screw Jacka is a robust and precise mechanical lifting solution designed for industrial applications requiring linear motion, heavy load handling, and exact positioning.</p>
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-bold text-navy text-sm uppercase mb-2">Key Features</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Worm gear design for self-locking and safe operation</li>
+                        <li>Manual or motor-driven operation</li>
+                        <li>Corrosion-resistant materials suitable for high-temperature environments</li>
+                        <li>High load capacity with precise linear displacement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-4 border-t flex justify-end">
+                <button onclick="closeModal('modal-neff')" class="px-6 py-2 border border-gray-300 rounded hover:bg-gray-100">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="contact" class="bg-navy text-white py-12 text-center">
+        <p class="text-gray-400">© 2026 Neuron International FZE. <a href="index.html" class="text-white underline">Back to Home</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+        AOS.init({ duration: 800, once: true }); 
+
+        // Modal Logic
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.classList.add('modal-open'); // Stop background scrolling
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.classList.remove('modal-open');
+        }
+
+        // Close modal when clicking outside the box
+        window.onclick = function(event) {
+            if (event.target.classList.contains('fixed')) {
+                event.target.classList.add('hidden');
+                document.body.classList.remove('modal-open');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Neuron International FZE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Manrope', 'sans-serif'] },
+                    colors: {
+                        navy: { DEFAULT: '#002060', dark: '#0a1226' },
+                        gold: '#C5A017',
+                        offwhite: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-navy-dark bg-offwhite flex flex-col min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy text-white rounded flex items-center justify-center"><i class="fa-solid fa-atom text-xl"></i></div>
+                <div>
+                <h1 class="text-2xl font-extrabold text-navy tracking-tight">NEURON</h1>
+                <p class="text-[10px] tracking-widest uppercase text-gray-500">International FZE</p>
+                </div>
+            </a>
+            <div class="hidden md:flex gap-6 font-semibold text-sm text-gray-600">
+                <a href="index.html" class="hover:text-navy transition">Home</a>
+                <a href="about.html" class="hover:text-navy transition">About Us</a>
+                <a href="products.html" class="hover:text-navy transition">Products</a>
+                <a href="suppliers.html" class="hover:text-navy transition">Suppliers</a>
+                <a href="careers.html" class="text-navy">Careers</a>
+            </div>
+            <a href="contact.html" class="px-6 py-2 bg-navy text-white font-bold rounded hover:bg-blue-900 transition">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="relative py-24 text-center text-white bg-cover bg-center" 
+             style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-color: #002060;">
+        
+        <div class="absolute inset-0 bg-navy/85 z-0"></div>
+
+        <div class="relative z-10 px-6">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-down">Join Our Team</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto">We are always looking for talent to drive the future of diamond technology.</p>
+        </div>
+    </section>
+
+    <section class="flex-grow flex items-center justify-center py-16 px-6">
+        <div class="bg-white p-10 rounded-2xl shadow-xl border border-gray-100 max-w-3xl w-full" data-aos="fade-up">
+            
+            <div class="flex items-center gap-4 mb-8 border-b border-gray-100 pb-6">
+                <div class="w-12 h-12 bg-blue-50 text-navy rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-file-signature text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-navy">General Application</h2>
+                    <p class="text-gray-500 text-sm">Send us your CV and we will contact you when a position opens.</p>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/accounts@neurondmcc.com" method="POST" class="space-y-6">
+
+    <input type="hidden" name="_subject" value="New Job Application - Neuron Website">
+    <input type="hidden" name="_captcha" value="false">
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label class="block text-sm font-bold text-navy mb-2">Full Name</label>
+            <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded border border-gray-200 focus:border-navy focus:outline-none bg-gray-50">
+        </div>
+        <div>
+            <label class="block text-sm font-bold text-navy mb-2">Email Address</label>
+            <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded border border-gray-200 focus:border-navy focus:outline-none bg-gray-50">
+        </div>
+    </div>
+
+    <div>
+        <label class="block text-sm font-bold text-navy mb-2">Position</label>
+        <select name="position" class="w-full px-4 py-3 rounded border border-gray-200 focus:border-navy focus:outline-none bg-gray-50 text-gray-700">
+            <option>Sales & Business Development</option>
+            <option>Logistics & Supply Chain</option>
+            <option>Technical Engineering</option>
+            <option>General Administration</option>
+        </select>
+    </div>
+
+    <div>
+        <label class="block text-sm font-bold text-navy mb-2">Cover Letter</label>
+        <textarea name="message" rows="4" placeholder="Tell us briefly about your experience..." class="w-full px-4 py-3 rounded border border-gray-200 focus:border-navy focus:outline-none bg-gray-50"></textarea>
+    </div>
+
+    <div>
+        <label class="block text-sm font-bold text-navy mb-2">LinkedIn Profile / Portfolio Link</label>
+        <input type="url" name="portfolio_link" placeholder="https://linkedin.com/in/..." class="w-full px-4 py-3 rounded border border-gray-200 focus:border-navy focus:outline-none bg-gray-50">
+        <p class="text-xs text-gray-400 mt-1">Please provide a link to your profile. We will request your PDF resume via email.</p>
+    </div>
+
+    <div class="pt-4">
+        <button type="submit" class="w-full py-4 bg-navy text-white font-bold rounded shadow-lg hover:bg-gold hover:text-navy transition duration-300">
+            Submit Application
+        </button>
+    </div>
+
+</form> 
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-8 text-center mt-auto">
+        <p class="text-gray-400 text-sm">© 2026 Neuron International FZE.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+</html>
